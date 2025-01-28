@@ -1,1 +1,2 @@
-Ravus
+Faire les courses|False
+Faire à manger|True

@@ -1,127 +1,155 @@
 ﻿using System;
-using System.IO;
 using System.Collections.Generic;
+using System.IO;
+
+class Task
+{
+    public string Description { get; set; }
+    public bool IsCompleted { get; set; }
+
+    public Task(string description)
+    {
+        Description = description;
+        IsCompleted = false;
+    }
+
+    public override string ToString()
+    {
+        return $"{(IsCompleted ? "[X]" : "[ ]")} {Description}";
+    }
+}
+
+class TaskManager
+{
+    private List<Task> tasks = new List<Task>();
+    private string filePath = "todo.txt";
+
+    public TaskManager()
+    {
+        LoadTasksFromFile();
+    }
+
+    public void AddTask(string description)
+    {
+        tasks.Add(new Task(description));
+        SaveTasksToFile();
+    }
+
+    public void ViewTasks()
+    {
+        if (tasks.Count == 0)
+        {
+            Console.WriteLine("Aucune tâche disponible.");
+            return;
+        }
+
+        for (int i = 0; i < tasks.Count; i++)
+        {
+            Console.WriteLine($"{i + 1}. {tasks[i]}");
+        }
+    }
+
+    public void MarkTaskAsCompleted(int index)
+    {
+        if (index >= 0 && index < tasks.Count)
+        {
+            tasks[index].IsCompleted = true;
+            SaveTasksToFile();
+        }
+        else
+        {
+            Console.WriteLine("Index invalide.");
+        }
+    }
+
+    public void DeleteTask(int index)
+    {
+        if (index >= 0 && index < tasks.Count)
+        {
+            tasks.RemoveAt(index);
+            SaveTasksToFile();
+        }
+        else
+        {
+            Console.WriteLine("Index invalide.");
+        }
+    }
+
+    private void LoadTasksFromFile()
+    {
+        if (File.Exists(filePath))
+        {
+            string[] lines = File.ReadAllLines(filePath);
+            foreach (string line in lines)
+            {
+                string[] parts = line.Split('|');
+                if (parts.Length == 2)
+                {
+                    Task task = new Task(parts[0]);
+                    task.IsCompleted = bool.Parse(parts[1]);
+                    tasks.Add(task);
+                }
+            }
+        }
+    }
+
+    private void SaveTasksToFile()
+    {
+        List<string> lines = new List<string>();
+        foreach (Task task in tasks)
+        {
+            lines.Add($"{task.Description}|{task.IsCompleted}");
+        }
+        File.WriteAllLines(filePath, lines);
+    }
+}
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Bienvenue dans un programme interactif en C#!");
-
-        Console.Write("Entrez votre nom : ");
-        string name = Console.ReadLine();
-
-        Console.WriteLine($"Bonjour, {name} !");
-
-        for (int i = 1; i <= 5; i++)
-        {
-            Console.WriteLine($"Ceci est le message numéro {i}");
-        }
-
-        // Appeler les nouvelles fonctionnalités
-        ManipulerFichiers();
-        GérerToDoList();
-    }
-
-    static void ManipulerFichiers()
-    {
-        string filePath = "example.txt";
-
-        try
-        {
-            // Écriture dans un fichier
-            File.WriteAllText(filePath, "Ceci est un fichier d'exemple.\n");
-
-            // Ajouter des lignes supplémentaires
-            File.AppendAllText(filePath, "Voici une ligne supplémentaire.\n");
-            File.AppendAllText(filePath, "Encore une autre ligne ajoutée !\n");
-
-            // Lecture depuis un fichier
-            string content = File.ReadAllText(filePath);
-            Console.WriteLine("Contenu du fichier :");
-            Console.WriteLine(content);
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Une erreur s'est produite lors de la manipulation du fichier : {ex.Message}");
-        }
-    }
-
-    static void GérerToDoList()
-    {
-        string toDoFilePath = "todo.txt";
-        List<string> toDoList = new List<string>();
-
-        Console.WriteLine("\n=== Gestion de la To-Do List ===");
-
-        // Charger les tâches existantes si le fichier existe
-        if (File.Exists(toDoFilePath))
-        {
-            toDoList.AddRange(File.ReadAllLines(toDoFilePath));
-            Console.WriteLine("Tâches existantes chargées depuis le fichier :");
-            foreach (string task in toDoList)
-            {
-                Console.WriteLine($"- {task}");
-            }
-        }
+        TaskManager taskManager = new TaskManager();
 
         while (true)
         {
-            Console.WriteLine("\nOptions :");
-            Console.WriteLine("1 - Ajouter une tâche");
-            Console.WriteLine("2 - Afficher les tâches");
-            Console.WriteLine("3 - Supprimer une tâche");
-            Console.WriteLine("4 - Quitter");
+            Console.WriteLine("\nMenu:");
+            Console.WriteLine("1. Ajouter une tâche");
+            Console.WriteLine("2. Voir les tâches");
+            Console.WriteLine("3. Marquer une tâche comme terminée");
+            Console.WriteLine("4. Supprimer une tâche");
+            Console.WriteLine("5. Quitter");
+            Console.Write("Votre choix : ");
 
-            Console.Write("Choisissez une option : ");
             string choice = Console.ReadLine();
 
             switch (choice)
             {
                 case "1":
-                    Console.Write("Entrez une nouvelle tâche : ");
-                    string newTask = Console.ReadLine();
-                    toDoList.Add(newTask);
-                    File.AppendAllText(toDoFilePath, newTask + "\n");
-                    Console.WriteLine("Tâche ajoutée !");
+                    Console.Write("Entrez la description de la tâche : ");
+                    string description = Console.ReadLine();
+                    taskManager.AddTask(description);
                     break;
-
                 case "2":
-                    Console.WriteLine("Voici vos tâches actuelles :");
-                    foreach (string task in toDoList)
-                    {
-                        Console.WriteLine($"- {task}");
-                    }
+                    taskManager.ViewTasks();
                     break;
-
                 case "3":
-                    Console.WriteLine("Voici vos tâches actuelles :");
-                    for (int i = 0; i < toDoList.Count; i++)
+                    Console.Write("Entrez le numéro de la tâche à marquer comme terminée : ");
+                    if (int.TryParse(Console.ReadLine(), out int completedIndex))
                     {
-                        Console.WriteLine($"{i + 1} - {toDoList[i]}");
-                    }
-
-                    Console.Write("Entrez le numéro de la tâche à supprimer : ");
-                    if (int.TryParse(Console.ReadLine(), out int taskNumber) &&
-                        taskNumber > 0 && taskNumber <= toDoList.Count)
-                    {
-                        string removedTask = toDoList[taskNumber - 1];
-                        toDoList.RemoveAt(taskNumber - 1);
-                        File.WriteAllLines(toDoFilePath, toDoList);
-                        Console.WriteLine($"Tâche supprimée : {removedTask}");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Numéro de tâche invalide !");
+                        taskManager.MarkTaskAsCompleted(completedIndex - 1);
                     }
                     break;
-
                 case "4":
-                    Console.WriteLine("Au revoir !");
+                    Console.Write("Entrez le numéro de la tâche à supprimer : ");
+                    if (int.TryParse(Console.ReadLine(), out int deleteIndex))
+                    {
+                        taskManager.DeleteTask(deleteIndex - 1);
+                    }
+                    break;
+                case "5":
                     return;
-
                 default:
-                    Console.WriteLine("Option invalide !");
+                    Console.WriteLine("Choix invalide.");
                     break;
             }
         }
