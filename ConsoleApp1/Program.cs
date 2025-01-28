@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 class Program
 {
@@ -15,5 +16,20 @@ class Program
         {
             Console.WriteLine($"Ceci est le message numéro {i}");
         }
+
+        // Appeler les nouvelles fonctionnalités
+        ManipulerFichiers();
+    }
+
+    static void ManipulerFichiers()
+    {
+        string filePath = "example.txt";
+
+        // Écriture dans un fichier
+        File.WriteAllText(filePath, "Ceci est un fichier d'exemple.");
+
+        // Lecture depuis un fichier
+        string content = File.ReadAllText(filePath);
+        Console.WriteLine("Contenu du fichier : " + content);
     }
 }
