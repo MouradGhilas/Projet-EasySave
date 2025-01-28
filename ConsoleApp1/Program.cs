@@ -4,34 +4,36 @@ using System.IO;
 
 class Task
 {
-    public string Description { get; set; }
+    public string Title { get; set; }
     public bool IsCompleted { get; set; }
 
-    public Task(string description)
+    public Task(string title)
     {
-        Description = description;
+        Title = title;
         IsCompleted = false;
     }
 
     public override string ToString()
     {
-        return $"{(IsCompleted ? "[X]" : "[ ]")} {Description}";
+        return $"{Title} - {(IsCompleted ? "Fait" : "À faire")}";
     }
 }
 
 class TaskManager
 {
-    private List<Task> tasks = new List<Task>();
+    private List<Task> tasks;
     private string filePath = "todo.txt";
+    private string backupFilePath = "backup_todo.txt";
 
     public TaskManager()
     {
+        tasks = new List<Task>();
         LoadTasksFromFile();
     }
 
-    public void AddTask(string description)
+    public void AddTask(string title)
     {
-        tasks.Add(new Task(description));
+        tasks.Add(new Task(title));
         SaveTasksToFile();
     }
 
@@ -39,68 +41,72 @@ class TaskManager
     {
         if (tasks.Count == 0)
         {
-            Console.WriteLine("Aucune tâche disponible.");
+            Console.WriteLine("Aucune tâche à afficher.");
             return;
         }
 
+        Console.WriteLine("Tâches :");
         for (int i = 0; i < tasks.Count; i++)
         {
             Console.WriteLine($"{i + 1}. {tasks[i]}");
         }
     }
 
-    public void MarkTaskAsCompleted(int index)
+    public void MarkTaskAsCompleted(int taskNumber)
     {
-        if (index >= 0 && index < tasks.Count)
+        if (taskNumber > 0 && taskNumber <= tasks.Count)
         {
-            tasks[index].IsCompleted = true;
+            tasks[taskNumber - 1].IsCompleted = true;
             SaveTasksToFile();
         }
         else
         {
-            Console.WriteLine("Index invalide.");
+            Console.WriteLine("Numéro de tâche invalide.");
         }
     }
 
-    public void DeleteTask(int index)
+    public void DeleteTask(int taskNumber)
     {
-        if (index >= 0 && index < tasks.Count)
+        if (taskNumber > 0 && taskNumber <= tasks.Count)
         {
-            tasks.RemoveAt(index);
+            tasks.RemoveAt(taskNumber - 1);
             SaveTasksToFile();
         }
         else
         {
-            Console.WriteLine("Index invalide.");
+            Console.WriteLine("Numéro de tâche invalide.");
         }
+    }
+
+    private void SaveTasksToFile()
+    {
+        using (StreamWriter writer = new StreamWriter(filePath))
+        {
+            foreach (var task in tasks)
+            {
+                writer.WriteLine($"{task.Title}|{task.IsCompleted}");
+            }
+        }
+
+        // Sauvegarde automatique
+        File.Copy(filePath, backupFilePath, true);
+        Console.WriteLine("Sauvegarde automatique effectuée !");
     }
 
     private void LoadTasksFromFile()
     {
         if (File.Exists(filePath))
         {
-            string[] lines = File.ReadAllLines(filePath);
-            foreach (string line in lines)
+            var lines = File.ReadAllLines(filePath);
+            foreach (var line in lines)
             {
-                string[] parts = line.Split('|');
+                var parts = line.Split('|');
                 if (parts.Length == 2)
                 {
-                    Task task = new Task(parts[0]);
-                    task.IsCompleted = bool.Parse(parts[1]);
-                    tasks.Add(task);
+                    tasks.Add(new Task(parts[0]) { IsCompleted = bool.Parse(parts[1]) });
                 }
             }
         }
-    }
-
-    private void SaveTasksToFile()
-    {
-        List<string> lines = new List<string>();
-        foreach (Task task in tasks)
-        {
-            lines.Add($"{task.Description}|{task.IsCompleted}");
-        }
-        File.WriteAllLines(filePath, lines);
     }
 }
 
@@ -112,8 +118,7 @@ class Program
 
         while (true)
         {
-            Console.WriteLine("\nMenu:");
-            Console.WriteLine("1. Ajouter une tâche");
+            Console.WriteLine("\n1. Ajouter une tâche");
             Console.WriteLine("2. Voir les tâches");
             Console.WriteLine("3. Marquer une tâche comme terminée");
             Console.WriteLine("4. Supprimer une tâche");
@@ -125,29 +130,43 @@ class Program
             switch (choice)
             {
                 case "1":
-                    Console.Write("Entrez la description de la tâche : ");
-                    string description = Console.ReadLine();
-                    taskManager.AddTask(description);
+                    Console.Write("Entrez le titre de la tâche : ");
+                    string title = Console.ReadLine();
+                    taskManager.AddTask(title);
                     break;
+
                 case "2":
                     taskManager.ViewTasks();
                     break;
+
                 case "3":
                     Console.Write("Entrez le numéro de la tâche à marquer comme terminée : ");
-                    if (int.TryParse(Console.ReadLine(), out int completedIndex))
+                    if (int.TryParse(Console.ReadLine(), out int markNumber))
                     {
-                        taskManager.MarkTaskAsCompleted(completedIndex - 1);
+                        taskManager.MarkTaskAsCompleted(markNumber);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Entrée invalide.");
                     }
                     break;
+
                 case "4":
                     Console.Write("Entrez le numéro de la tâche à supprimer : ");
-                    if (int.TryParse(Console.ReadLine(), out int deleteIndex))
+                    if (int.TryParse(Console.ReadLine(), out int deleteNumber))
                     {
-                        taskManager.DeleteTask(deleteIndex - 1);
+                        taskManager.DeleteTask(deleteNumber);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Entrée invalide.");
                     }
                     break;
+
                 case "5":
+                    Console.WriteLine("Au revoir !");
                     return;
+
                 default:
                     Console.WriteLine("Choix invalide.");
                     break;
