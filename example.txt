@@ -1,1 +1,3 @@
 Ceci est un fichier d'exemple.
+Voici une ligne supplémentaire.
+Encore une autre ligne ajoutée !
