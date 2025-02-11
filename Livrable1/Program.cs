@@ -15,6 +15,10 @@ namespace Livrable1
 
         //console interface : MENU
         static async Task Main(string[] args)
+        static Logger logger = new Logger("/Users/maxencechartier/SourceFolder/log.txt");
+        static StateMonitor stateMonitor = new StateMonitor("/Users/maxencechartier/SourceFolder/state.json");
+
+        static void Main(string[] args)
         {
 
             Console.WriteLine("Choisissez votre langue / Choose your language (fr/en) :");
@@ -51,7 +55,6 @@ namespace Livrable1
 
             string choice = Console.ReadLine();
 
-            //allow the user to choose what to do next
             if (choice == "1")
             {
                 TestValidateBackupJob();
