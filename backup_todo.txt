@@ -1,5 +1,0 @@
-Faire les courses|False
-Faire à manger|True
-Manger|False
-Boire|True
-Faire une pause|False
