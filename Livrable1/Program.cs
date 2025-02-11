@@ -4,9 +4,13 @@ namespace Livrable1
 {
     class Program
     {
+        //create the file log.txt
         static Logger logger = new Logger("/Users/maxencechartier/SourceFolder/log.txt");
+
+        //specifications about the state of the state of the backup
         static StateMonitor stateMonitor = new StateMonitor("/Users/maxencechartier/SourceFolder/state.json");
 
+        //console interface : MENU
         static void Main(string[] args)
         {
             Console.WriteLine("=== EasySave Console App ===");
@@ -18,6 +22,7 @@ namespace Livrable1
 
             string choice = Console.ReadLine();
 
+            //allow the user to choose what to do next
             if (choice == "1")
             {
                 TestValidateBackupJob();
