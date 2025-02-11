@@ -1,5 +1,4 @@
-﻿﻿using Livrable1.Models; // Importer Logger et StateMonitor et BackupJob
-
+using Livrable1.Models; // Importer Logger et StateMonitor et BackupJob
 namespace Livrable1
 {
     class Program
