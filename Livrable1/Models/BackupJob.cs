@@ -24,7 +24,6 @@ namespace Livrable1.Models
             Type = type;
         }
 
-        // management of the errors
         public bool ValidatePaths()
         {
             bool sourceExists = Directory.Exists(SourceDirectory);
@@ -49,7 +48,6 @@ namespace Livrable1.Models
             Console.WriteLine($"Exécution du travail de sauvegarde : {Name}");
             Console.WriteLine($"Sauvegarde {Type} de {SourceDirectory} vers {TargetDirectory}.");
             // Simulez une copie ici ou ajoutez la logique réelle pour gérer la sauvegarde.
-            // simulate a copy here or add the real logic to manage the backup
         }
     }
 }

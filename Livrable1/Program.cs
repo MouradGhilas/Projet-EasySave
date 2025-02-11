@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿﻿using Livrable1.Models; // Importer Logger et StateMonitor et BackupJob
+=======
+﻿using Livrable1.Models; // Importer Logger et StateMonitor et BackupJob
+>>>>>>> 537318abb85a53ef11acdd338f41be367a7acec0
 
 namespace Livrable1
 {
