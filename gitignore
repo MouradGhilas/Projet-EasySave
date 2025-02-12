@@ -1,0 +1,38 @@
+# Fichiers binaires et build
+bin/
+obj/
+*.pdb
+*.dll
+*.exe
+*.cache
+*.sourcelink.json
+*.nuget.dgspec.json
+*.nuget.g.props
+*.nuget.cache
+project.assets.json
+
+# Dossiers spécifiques à .NET
+**/bin/
+**/obj/
+**/ref/
+**/refint/
+
+# Fichiers temporaires de Visual Studio
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vs/
+
+# Logs et fichiers de débogage
+*.log
+*.tlog
+
+# Packages NuGet (si tu ne veux pas qu'ils soient commités)
+packages/
+*.nupkg
+
+# Cache et fichiers temporaires
+*.tmp
+*.lock.json
