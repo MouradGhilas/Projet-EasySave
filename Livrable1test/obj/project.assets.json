@@ -63,32 +63,39 @@
     ]
   },
   "packageFolders": {
-    "/Users/maxencechartier/.nuget/packages/": {}
+    "C:\\Users\\Utilisateur\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/Livrable1test/Livrable1test.csproj",
+      "projectUniqueName": "C:\\Users\\Utilisateur\\source\\repos\\Projet-EasySave\\Projet-EasySave\\Livrable1test\\Livrable1test.csproj",
       "projectName": "Livrable1test",
-      "projectPath": "/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/Livrable1test/Livrable1test.csproj",
-      "packagesPath": "/Users/maxencechartier/.nuget/packages/",
-      "outputPath": "/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/Livrable1test/obj/",
+      "projectPath": "C:\\Users\\Utilisateur\\source\\repos\\Projet-EasySave\\Projet-EasySave\\Livrable1test\\Livrable1test.csproj",
+      "packagesPath": "C:\\Users\\Utilisateur\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Utilisateur\\source\\repos\\Projet-EasySave\\Projet-EasySave\\Livrable1test\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/maxencechartier/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Utilisateur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/LoggerLibrary.csproj": {
-              "projectPath": "/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/LoggerLibrary.csproj"
+            "C:\\Users\\Utilisateur\\source\\repos\\Projet-EasySave\\Projet-EasySave\\LoggerLibrary\\LoggerLibrary.csproj": {
+              "projectPath": "C:\\Users\\Utilisateur\\source\\repos\\Projet-EasySave\\Projet-EasySave\\LoggerLibrary\\LoggerLibrary.csproj"
             }
           }
         }
@@ -133,11 +140,11 @@
             "version": "[9.0.1, 9.0.1]"
           },
           {
-            "name": "Microsoft.NETCore.App.Host.osx-x64",
+            "name": "Microsoft.NETCore.App.Host.osx-arm64",
             "version": "[9.0.1, 9.0.1]"
           },
           {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "name": "Microsoft.NETCore.App.Host.osx-x64",
             "version": "[9.0.1, 9.0.1]"
           },
           {
@@ -151,6 +158,10 @@
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x64",
             "version": "[9.0.1, 9.0.1]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+            "version": "[9.0.1, 9.0.1]"
           }
         ],
         "frameworkReferences": {
@@ -158,7 +169,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
