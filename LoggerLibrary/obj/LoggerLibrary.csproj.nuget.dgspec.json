@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/LoggerLibrary.csproj": {}
+    "C:\\Users\\BK6573\\OneDrive - ENGIE\\Bureau\\Génie Logiciel\\Projet-EasySave\\LoggerLibrary\\LoggerLibrary.csproj": {}
   },
   "projects": {
-    "/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/LoggerLibrary.csproj": {
+    "C:\\Users\\BK6573\\OneDrive - ENGIE\\Bureau\\Génie Logiciel\\Projet-EasySave\\LoggerLibrary\\LoggerLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/LoggerLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\BK6573\\OneDrive - ENGIE\\Bureau\\Génie Logiciel\\Projet-EasySave\\LoggerLibrary\\LoggerLibrary.csproj",
         "projectName": "LoggerLibrary",
-        "projectPath": "/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/LoggerLibrary.csproj",
-        "packagesPath": "/Users/maxencechartier/.nuget/packages/",
-        "outputPath": "/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/obj/",
+        "projectPath": "C:\\Users\\BK6573\\OneDrive - ENGIE\\Bureau\\Génie Logiciel\\Projet-EasySave\\LoggerLibrary\\LoggerLibrary.csproj",
+        "packagesPath": "C:\\Users\\BK6573\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\BK6573\\OneDrive - ENGIE\\Bureau\\Génie Logiciel\\Projet-EasySave\\LoggerLibrary\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/maxencechartier/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\BK6573\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

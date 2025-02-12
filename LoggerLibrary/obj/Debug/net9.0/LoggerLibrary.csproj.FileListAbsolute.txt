@@ -10,3 +10,15 @@
 /Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/obj/Debug/net9.0/refint/LoggerLibrary.dll
 /Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/obj/Debug/net9.0/LoggerLibrary.pdb
 /Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/obj/Debug/net9.0/ref/LoggerLibrary.dll
+C:\Users\BK6573\OneDrive - ENGIE\Bureau\Génie Logiciel\Projet-EasySave\LoggerLibrary\bin\Debug\net9.0\LoggerLibrary.deps.json
+C:\Users\BK6573\OneDrive - ENGIE\Bureau\Génie Logiciel\Projet-EasySave\LoggerLibrary\bin\Debug\net9.0\LoggerLibrary.dll
+C:\Users\BK6573\OneDrive - ENGIE\Bureau\Génie Logiciel\Projet-EasySave\LoggerLibrary\bin\Debug\net9.0\LoggerLibrary.pdb
+C:\Users\BK6573\OneDrive - ENGIE\Bureau\Génie Logiciel\Projet-EasySave\LoggerLibrary\obj\Debug\net9.0\LoggerLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BK6573\OneDrive - ENGIE\Bureau\Génie Logiciel\Projet-EasySave\LoggerLibrary\obj\Debug\net9.0\LoggerLibrary.AssemblyInfoInputs.cache
+C:\Users\BK6573\OneDrive - ENGIE\Bureau\Génie Logiciel\Projet-EasySave\LoggerLibrary\obj\Debug\net9.0\LoggerLibrary.AssemblyInfo.cs
+C:\Users\BK6573\OneDrive - ENGIE\Bureau\Génie Logiciel\Projet-EasySave\LoggerLibrary\obj\Debug\net9.0\LoggerLibrary.csproj.CoreCompileInputs.cache
+C:\Users\BK6573\OneDrive - ENGIE\Bureau\Génie Logiciel\Projet-EasySave\LoggerLibrary\obj\Debug\net9.0\LoggerLibrary.sourcelink.json
+C:\Users\BK6573\OneDrive - ENGIE\Bureau\Génie Logiciel\Projet-EasySave\LoggerLibrary\obj\Debug\net9.0\LoggerLibrary.dll
+C:\Users\BK6573\OneDrive - ENGIE\Bureau\Génie Logiciel\Projet-EasySave\LoggerLibrary\obj\Debug\net9.0\refint\LoggerLibrary.dll
+C:\Users\BK6573\OneDrive - ENGIE\Bureau\Génie Logiciel\Projet-EasySave\LoggerLibrary\obj\Debug\net9.0\LoggerLibrary.pdb
+C:\Users\BK6573\OneDrive - ENGIE\Bureau\Génie Logiciel\Projet-EasySave\LoggerLibrary\obj\Debug\net9.0\ref\LoggerLibrary.dll

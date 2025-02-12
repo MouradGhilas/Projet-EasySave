@@ -46,18 +46,18 @@ class Program
             }
             else if (lang == "en")
             {
-                optionInvalide = await TraduireTexte(optionInvalide, "fr", "en");
- 
-                Console.WriteLine(await TraduireTexte(title, "fr", "en"));
-                Console.WriteLine(await TraduireTexte(option1, "fr", "en"));
-                Console.WriteLine(await TraduireTexte(option2, "fr", "en"));
-                Console.WriteLine(await TraduireTexte(option3, "fr", "en"));
-                Console.WriteLine(await TraduireTexte(option4, "fr", "en"));
-                Console.WriteLine(await TraduireTexte(option5, "fr", "en"));
-                Console.WriteLine(await TraduireTexte(quitterApp, "fr", "en"));
-                Console.WriteLine(await TraduireTexte(choixTexte, "fr", "en"));
+                optionInvalide = await Translator.TraduireTexte(optionInvalide, "fr", "en");
+
+                Console.WriteLine(await Translator.TraduireTexte(title, "fr", "en"));
+                Console.WriteLine(await Translator.TraduireTexte(option2, "fr", "en"));
+                Console.WriteLine(await Translator.TraduireTexte(option1, "fr", "en"));
+                Console.WriteLine(await Translator.TraduireTexte(option3, "fr", "en"));
+                Console.WriteLine(await Translator.TraduireTexte(option4, "fr", "en"));
+                Console.WriteLine(await Translator.TraduireTexte(option5, "fr", "en"));
+                Console.WriteLine(await Translator.TraduireTexte(quitterApp, "fr", "en"));
+                Console.WriteLine(await Translator.TraduireTexte(choixTexte, "fr", "en"));
             }
- 
+
             string choice = Console.ReadLine();
 
             switch (choice)
@@ -86,19 +86,7 @@ class Program
         }
     }
 
-    static async Task<string> TraduireTexte(string texte, string sourceLang, string targetLang)
-        {
-            string url = $"https://translate.googleapis.com/translate_a/single?client=gtx&sl={sourceLang}&tl={targetLang}&dt=t&q={Uri.EscapeDataString(texte)}";
- 
-            using HttpClient client = new HttpClient();
-            string response = await client.GetStringAsync(url);
- 
-            // Décoder la réponse JSON
-            using JsonDocument json = JsonDocument.Parse(response);
-            string translatedText = json.RootElement[0][0][0].GetString();
- 
-            return translatedText;
-        }
+
 
     static void CreateBackupJob(BackupManager manager, Logger logger)
     {
