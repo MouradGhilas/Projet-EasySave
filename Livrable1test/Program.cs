@@ -2,10 +2,11 @@
 using Livrable1.Models;
 using Livrable1.Enums;
 using Livrable1.Services;
+using System.Text.Json;
 
 class Program
 {
-    static void Main()
+    static async Task Main()
     {
         // Crée le dossier State s'il n'existe pas
         if (!Directory.Exists("State"))
@@ -16,16 +17,46 @@ class Program
         Logger logger = new Logger("Logs");
         BackupManager manager = new BackupManager(logger);
 
+        string title = "=== EasySave Console App ===";
+        string option1 = "1. Créer un travail de sauvegarde";
+        string option2 = "2. Lister les travaux de sauvegarde";
+        string option3 = "3. Exécuter une sauvegarde";
+        string option4 = "4. Exécuter toutes les sauvegardes";
+        string option5 = "5. Afficher les logs";
+        string quitterApp = "6. Quitter";
+        string choixTexte = "Choisissez une option :";
+        string optionInvalide = "Option invalide. Veuillez réessayer.";
+
         while (true)
         {
-            Console.WriteLine("=== Menu Principal ===");
-            Console.WriteLine("1. Créer un travail de sauvegarde");
-            Console.WriteLine("2. Lister les travaux de sauvegarde");
-            Console.WriteLine("3. Exécuter une sauvegarde");
-            Console.WriteLine("4. Exécuter toutes les sauvegardes");
-            Console.WriteLine("5. Afficher les logs");
-            Console.WriteLine("6. Quitter");
-            Console.Write("Choisissez une option : ");
+            Console.WriteLine("Choisissez votre langue / Choose your language (fr/en) :");
+            string lang = Console.ReadLine().ToLower();
+
+            if (lang == "fr")
+            {
+                Console.WriteLine(title);
+                Console.WriteLine(option1);
+                Console.WriteLine(option2);
+                Console.WriteLine(option3);
+                Console.WriteLine(option4);
+                Console.WriteLine(option5);
+                Console.WriteLine(quitterApp);
+                Console.WriteLine(choixTexte);
+            }
+            else if (lang == "en")
+            {
+                optionInvalide = await TraduireTexte(optionInvalide, "fr", "en");
+ 
+                Console.WriteLine(await TraduireTexte(title, "fr", "en"));
+                Console.WriteLine(await TraduireTexte(option1, "fr", "en"));
+                Console.WriteLine(await TraduireTexte(option2, "fr", "en"));
+                Console.WriteLine(await TraduireTexte(option3, "fr", "en"));
+                Console.WriteLine(await TraduireTexte(option4, "fr", "en"));
+                Console.WriteLine(await TraduireTexte(option5, "fr", "en"));
+                Console.WriteLine(await TraduireTexte(quitterApp, "fr", "en"));
+                Console.WriteLine(await TraduireTexte(choixTexte, "fr", "en"));
+            }
+ 
             string choice = Console.ReadLine();
 
             switch (choice)
@@ -48,11 +79,25 @@ class Program
                 case "6":
                     return;
                 default:
-                    Console.WriteLine("Option invalide. Veuillez réessayer.");
+                    Console.WriteLine(optionInvalide);
                     break;
             }
         }
     }
+
+    static async Task<string> TraduireTexte(string texte, string sourceLang, string targetLang)
+        {
+            string url = $"https://translate.googleapis.com/translate_a/single?client=gtx&sl={sourceLang}&tl={targetLang}&dt=t&q={Uri.EscapeDataString(texte)}";
+ 
+            using HttpClient client = new HttpClient();
+            string response = await client.GetStringAsync(url);
+ 
+            // Décoder la réponse JSON
+            using JsonDocument json = JsonDocument.Parse(response);
+            string translatedText = json.RootElement[0][0][0].GetString();
+ 
+            return translatedText;
+        }
 
     static void CreateBackupJob(BackupManager manager, Logger logger)
     {
