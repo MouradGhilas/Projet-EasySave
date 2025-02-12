@@ -12,6 +12,42 @@
           "bin/placeholder/LoggerLibrary.dll": {}
         }
       }
+    },
+    "net9.0/osx-arm64": {
+      "LoggerLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/LoggerLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LoggerLibrary.dll": {}
+        }
+      }
+    },
+    "net9.0/osx-x64": {
+      "LoggerLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/LoggerLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LoggerLibrary.dll": {}
+        }
+      }
+    },
+    "net9.0/win-x64": {
+      "LoggerLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/LoggerLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LoggerLibrary.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -83,12 +119,57 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.osx-arm64",
+            "version": "[9.0.1, 9.0.1]"
+          },
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.osx-x64",
+            "version": "[9.0.1, 9.0.1]"
+          },
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+            "version": "[9.0.1, 9.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.osx-x64",
+            "version": "[9.0.1, 9.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[9.0.1, 9.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.osx-arm64",
+            "version": "[9.0.1, 9.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.osx-x64",
+            "version": "[9.0.1, 9.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.win-x64",
+            "version": "[9.0.1, 9.0.1]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "osx-arm64": {
+        "#import": []
+      },
+      "osx-x64": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
       }
     }
   }
