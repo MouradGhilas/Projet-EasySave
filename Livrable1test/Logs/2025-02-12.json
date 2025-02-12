@@ -486,3 +486,11 @@
   "Timestamp": "2025-02-12T09:03:56.655904+01:00",
   "Message": "Job ajouté : saveDeTestNumero1"
 }
+{
+  "Timestamp": "2025-02-12T16:40:05.0690612+01:00",
+  "Message": "Aucun travail de sauvegarde à exécuter."
+}
+{
+  "Timestamp": "2025-02-12T16:40:33.3470912+01:00",
+  "Message": "Job ajouté : cc"
+}
