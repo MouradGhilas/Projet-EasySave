@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "/Rbl1tEFoak=",
+  "dgSpecHash": "2pU+edFK1CY=",
   "success": true,
   "projectFilePath": "/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/LoggerLibrary.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/maxencechartier/.nuget/packages/microsoft.netcore.app.runtime.win-x64/9.0.1/microsoft.netcore.app.runtime.win-x64.9.0.1.nupkg.sha512",
+    "/Users/maxencechartier/.nuget/packages/microsoft.aspnetcore.app.runtime.win-x64/9.0.1/microsoft.aspnetcore.app.runtime.win-x64.9.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
