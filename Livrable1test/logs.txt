@@ -1,0 +1,34 @@
+11/02/2025 22:25:23: Job ajouté : Job1
+11/02/2025 22:25:23: Erreur : Répertoire source inexistant -> SourceFolder
+11/02/2025 22:25:23: Erreur : Répertoire cible inexistant -> TargetFolder
+11/02/2025 22:25:23: Erreur sur Job1 : Répertoires invalides
+11/02/2025 22:26:21: Job ajouté : Job1
+11/02/2025 22:26:21: Début de la sauvegarde : Job1
+11/02/2025 22:26:21: Sauvegarde terminée pour Job1
+11/02/2025 22:26:43: Job ajouté : Job1
+11/02/2025 22:26:43: Début de la sauvegarde : Job1
+11/02/2025 22:26:43: Sauvegarde terminée pour Job1
+12/02/2025 00:20:48: Job ajouté : Job1
+12/02/2025 00:20:48: Job ajouté : Job2
+12/02/2025 00:20:48: Début de la sauvegarde : Job1
+12/02/2025 00:20:48: Sauvegarde terminée pour Job1
+12/02/2025 00:20:48: Erreur : Répertoire source inexistant -> SourceFolder2
+12/02/2025 00:20:48: Erreur : Répertoire cible inexistant -> TargetFolder2
+12/02/2025 00:20:48: Erreur sur Job2 : Répertoires invalides
+12/02/2025 00:20:48: Début de la sauvegarde : Job1
+12/02/2025 00:20:48: Sauvegarde terminée pour Job1
+12/02/2025 00:20:48: Erreur : Répertoire source inexistant -> SourceFolder2
+12/02/2025 00:20:48: Erreur : Répertoire cible inexistant -> TargetFolder2
+12/02/2025 00:20:48: Erreur lors de l'exécution de Job2 : Répertoires invalides
+12/02/2025 00:22:35: Job ajouté : Job1
+12/02/2025 00:22:35: Job ajouté : Job2
+12/02/2025 00:22:35: Erreur : Répertoire source inexistant -> SourceFolder
+12/02/2025 00:22:35: Erreur : Répertoire cible inexistant -> TargetFolder
+12/02/2025 00:22:35: Erreur sur Job1 : Répertoires invalides
+12/02/2025 00:22:35: Début de la sauvegarde : Job2
+12/02/2025 00:22:35: Sauvegarde terminée pour Job2
+12/02/2025 00:22:35: Erreur : Répertoire source inexistant -> SourceFolder
+12/02/2025 00:22:35: Erreur : Répertoire cible inexistant -> TargetFolder
+12/02/2025 00:22:35: Erreur lors de l'exécution de Job1 : Répertoires invalides
+12/02/2025 00:22:35: Début de la sauvegarde : Job2
+12/02/2025 00:22:35: Sauvegarde terminée pour Job2

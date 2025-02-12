@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Livrable1test/1.0.0": {
+        "runtime": {
+          "Livrable1test.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Livrable1test/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

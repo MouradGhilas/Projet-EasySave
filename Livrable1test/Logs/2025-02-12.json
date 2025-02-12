@@ -1,0 +1,484 @@
+{
+  "Timestamp": "2025-02-12T00:35:57.4002916+01:00",
+  "Message": "Job ajout\u00E9 : Job1"
+}
+{
+  "Timestamp": "2025-02-12T00:35:57.514112+01:00",
+  "Message": "Job ajout\u00E9 : Job2"
+}
+{
+  "Timestamp": "2025-02-12T00:35:57.5179388+01:00",
+  "Message": "Erreur : R\u00E9pertoire source inexistant -\u003E SourceFolder"
+}
+{
+  "Timestamp": "2025-02-12T00:35:57.5186206+01:00",
+  "Message": "Erreur : R\u00E9pertoire cible inexistant -\u003E TargetFolder"
+}
+{
+  "Timestamp": "2025-02-12T00:35:57.5195432+01:00",
+  "Message": "Erreur sur Job1 : R\u00E9pertoires invalides"
+}
+{
+  "Timestamp": "2025-02-12T00:35:57.5200387+01:00",
+  "Message": "D\u00E9but de la sauvegarde : Job2"
+}
+{
+  "Timestamp": "2025-02-12T00:35:57.5223436+01:00",
+  "Message": "Sauvegarde termin\u00E9e pour Job2"
+}
+{
+  "Timestamp": "2025-02-12T00:35:57.5243487+01:00",
+  "Message": "Erreur : R\u00E9pertoire source inexistant -\u003E SourceFolder"
+}
+{
+  "Timestamp": "2025-02-12T00:35:57.5249002+01:00",
+  "Message": "Erreur : R\u00E9pertoire cible inexistant -\u003E TargetFolder"
+}
+{
+  "Timestamp": "2025-02-12T00:35:57.525422+01:00",
+  "Message": "Erreur lors de l\u0027ex\u00E9cution de Job1 : R\u00E9pertoires invalides"
+}
+{
+  "Timestamp": "2025-02-12T00:35:57.5277299+01:00",
+  "Message": "D\u00E9but de la sauvegarde : Job2"
+}
+{
+  "Timestamp": "2025-02-12T00:35:57.5284064+01:00",
+  "Message": "Sauvegarde termin\u00E9e pour Job2"
+}
+{
+  "Timestamp": "2025-02-12T00:43:33.8395937+01:00",
+  "Message": "Job ajouté : Job1"
+}
+{
+  "Timestamp": "2025-02-12T00:43:33.9310263+01:00",
+  "Message": "Job ajouté : Job2"
+}
+{
+  "Timestamp": "2025-02-12T00:43:33.9338228+01:00",
+  "Message": "Erreur : Répertoire source inexistant -> SourceFolder"
+}
+{
+  "Timestamp": "2025-02-12T00:43:33.9342102+01:00",
+  "Message": "Erreur : Répertoire cible inexistant -> TargetFolder"
+}
+{
+  "Timestamp": "2025-02-12T00:43:33.9350121+01:00",
+  "Message": "Erreur sur Job1 : Répertoires invalides"
+}
+{
+  "Timestamp": "2025-02-12T00:43:33.9354466+01:00",
+  "Message": "Début de la sauvegarde : Job2"
+}
+{
+  "Timestamp": "2025-02-12T00:43:33.9370379+01:00",
+  "Message": "Sauvegarde terminée pour Job2"
+}
+{
+  "Timestamp": "2025-02-12T00:43:33.9388573+01:00",
+  "Message": "Erreur : Répertoire source inexistant -> SourceFolder"
+}
+{
+  "Timestamp": "2025-02-12T00:43:33.939318+01:00",
+  "Message": "Erreur : Répertoire cible inexistant -> TargetFolder"
+}
+{
+  "Timestamp": "2025-02-12T00:43:33.9398213+01:00",
+  "Message": "Erreur lors de l'exécution de Job1 : Répertoires invalides"
+}
+{
+  "Timestamp": "2025-02-12T00:43:33.9403322+01:00",
+  "Message": "Début de la sauvegarde : Job2"
+}
+{
+  "Timestamp": "2025-02-12T00:43:33.9409804+01:00",
+  "Message": "Sauvegarde terminée pour Job2"
+}
+{
+  "Timestamp": "2025-02-12T00:44:04.612804+01:00",
+  "Message": "Job ajouté : Job1"
+}
+{
+  "Timestamp": "2025-02-12T00:44:04.6908476+01:00",
+  "Message": "Job ajouté : Job2"
+}
+{
+  "Timestamp": "2025-02-12T00:44:04.6931473+01:00",
+  "Message": "Erreur : Répertoire source inexistant -> SourceFolder"
+}
+{
+  "Timestamp": "2025-02-12T00:44:04.6935427+01:00",
+  "Message": "Erreur : Répertoire cible inexistant -> TargetFolder"
+}
+{
+  "Timestamp": "2025-02-12T00:44:04.6943006+01:00",
+  "Message": "Erreur sur Job1 : Répertoires invalides"
+}
+{
+  "Timestamp": "2025-02-12T00:44:04.6946903+01:00",
+  "Message": "Début de la sauvegarde : Job2"
+}
+{
+  "Timestamp": "2025-02-12T00:44:04.6988293+01:00",
+  "BackupName": "Job2",
+  "SourceFilePath": "SourceFolder2\\file.txt",
+  "TargetFilePath": "TargetFolder2\\file.txt",
+  "FileSize": 13,
+  "TransferTimeMs": 1
+}
+{
+  "Timestamp": "2025-02-12T00:44:04.7090444+01:00",
+  "Message": "Sauvegarde terminée pour Job2"
+}
+{
+  "Timestamp": "2025-02-12T00:44:04.7109533+01:00",
+  "Message": "Erreur : Répertoire source inexistant -> SourceFolder"
+}
+{
+  "Timestamp": "2025-02-12T00:44:04.7113799+01:00",
+  "Message": "Erreur : Répertoire cible inexistant -> TargetFolder"
+}
+{
+  "Timestamp": "2025-02-12T00:44:04.7118258+01:00",
+  "Message": "Erreur lors de l'exécution de Job1 : Répertoires invalides"
+}
+{
+  "Timestamp": "2025-02-12T00:44:04.7125012+01:00",
+  "Message": "Début de la sauvegarde : Job2"
+}
+{
+  "Timestamp": "2025-02-12T00:44:04.7131993+01:00",
+  "Message": "Sauvegarde terminée pour Job2"
+}
+{
+  "Timestamp": "2025-02-12T01:02:00.1349593+01:00",
+  "Message": "Job ajouté : Job1"
+}
+{
+  "Timestamp": "2025-02-12T01:02:00.216179+01:00",
+  "Message": "Job ajouté : Job2"
+}
+{
+  "Timestamp": "2025-02-12T01:02:00.2195162+01:00",
+  "Message": "Erreur : Répertoire source inexistant -> SourceFolder"
+}
+{
+  "Timestamp": "2025-02-12T01:02:00.2199833+01:00",
+  "Message": "Erreur : Répertoire cible inexistant -> TargetFolder"
+}
+{
+  "Timestamp": "2025-02-12T01:02:00.2206551+01:00",
+  "Message": "Erreur sur Job1 : Répertoires invalides"
+}
+{
+  "Timestamp": "2025-02-12T01:02:00.2211165+01:00",
+  "Message": "Début de la sauvegarde : Job2"
+}
+{
+  "Timestamp": "2025-02-12T01:02:00.4426232+01:00",
+  "BackupName": "Job2",
+  "SourceFilePath": "SourceFolder2\\file.txt",
+  "TargetFilePath": "TargetFolder2\\file.txt",
+  "FileSize": 13,
+  "TransferTimeMs": 1
+}
+{
+  "Timestamp": "2025-02-12T01:02:00.4569983+01:00",
+  "Message": "Sauvegarde terminée pour Job2"
+}
+{
+  "Timestamp": "2025-02-12T01:02:43.9378629+01:00",
+  "Message": "Job ajouté : Job1"
+}
+{
+  "Timestamp": "2025-02-12T01:02:44.0087222+01:00",
+  "Message": "Job ajouté : Job2"
+}
+{
+  "Timestamp": "2025-02-12T01:02:44.0126557+01:00",
+  "Message": "Erreur : Répertoire source inexistant -> SourceFolder"
+}
+{
+  "Timestamp": "2025-02-12T01:02:44.0130384+01:00",
+  "Message": "Erreur : Répertoire cible inexistant -> TargetFolder"
+}
+{
+  "Timestamp": "2025-02-12T01:02:44.0137575+01:00",
+  "Message": "Erreur sur Job1 : Répertoires invalides"
+}
+{
+  "Timestamp": "2025-02-12T01:02:44.0141743+01:00",
+  "Message": "Début de la sauvegarde : Job2"
+}
+{
+  "Timestamp": "2025-02-12T01:02:44.0604482+01:00",
+  "BackupName": "Job2",
+  "SourceFilePath": "SourceFolder2\\file.txt",
+  "TargetFilePath": "TargetFolder2\\file.txt",
+  "FileSize": 26,
+  "TransferTimeMs": 1
+}
+{
+  "Timestamp": "2025-02-12T01:02:44.0750922+01:00",
+  "Message": "Sauvegarde terminée pour Job2"
+}
+{
+  "Timestamp": "2025-02-12T01:04:06.4582558+01:00",
+  "Message": "Job ajouté : Job1"
+}
+{
+  "Timestamp": "2025-02-12T01:04:06.5352262+01:00",
+  "Message": "Job ajouté : Job2"
+}
+{
+  "Timestamp": "2025-02-12T01:04:06.5385678+01:00",
+  "Message": "Erreur : Répertoire source inexistant -> SourceFolder"
+}
+{
+  "Timestamp": "2025-02-12T01:04:06.5389862+01:00",
+  "Message": "Erreur : Répertoire cible inexistant -> TargetFolder"
+}
+{
+  "Timestamp": "2025-02-12T01:04:06.5399549+01:00",
+  "Message": "Erreur sur Job1 : Répertoires invalides"
+}
+{
+  "Timestamp": "2025-02-12T01:04:06.5403703+01:00",
+  "Message": "Début de la sauvegarde : Job2"
+}
+{
+  "Timestamp": "2025-02-12T01:04:06.5779495+01:00",
+  "BackupName": "Job2",
+  "SourceFilePath": "SourceFolder2\\file.txt",
+  "TargetFilePath": "TargetFolder2\\file.txt",
+  "FileSize": 26,
+  "TransferTimeMs": 1
+}
+{
+  "Timestamp": "2025-02-12T01:04:06.6050517+01:00",
+  "BackupName": "Job2",
+  "SourceFilePath": "SourceFolder2\\hello.txt",
+  "TargetFilePath": "TargetFolder2\\hello.txt",
+  "FileSize": 25,
+  "TransferTimeMs": 1
+}
+{
+  "Timestamp": "2025-02-12T01:04:06.6251974+01:00",
+  "BackupName": "Job2",
+  "SourceFilePath": "SourceFolder2\\yo.txt",
+  "TargetFilePath": "TargetFolder2\\yo.txt",
+  "FileSize": 114,
+  "TransferTimeMs": 1
+}
+{
+  "Timestamp": "2025-02-12T01:04:06.6262393+01:00",
+  "Message": "Sauvegarde terminée pour Job2"
+}
+{
+  "Timestamp": "2025-02-12T01:04:46.9509605+01:00",
+  "Message": "Job ajouté : Job1"
+}
+{
+  "Timestamp": "2025-02-12T01:04:47.0194392+01:00",
+  "Message": "Job ajouté : Job2"
+}
+{
+  "Timestamp": "2025-02-12T01:04:47.0234382+01:00",
+  "Message": "Erreur : Répertoire source inexistant -> SourceFolder"
+}
+{
+  "Timestamp": "2025-02-12T01:04:47.0238282+01:00",
+  "Message": "Erreur : Répertoire cible inexistant -> TargetFolder"
+}
+{
+  "Timestamp": "2025-02-12T01:04:47.0244304+01:00",
+  "Message": "Erreur sur Job1 : Répertoires invalides"
+}
+{
+  "Timestamp": "2025-02-12T01:04:47.0248951+01:00",
+  "Message": "Début de la sauvegarde : Job2"
+}
+{
+  "Timestamp": "2025-02-12T01:04:47.0673039+01:00",
+  "BackupName": "Job2",
+  "SourceFilePath": "SourceFolder2\\file.txt",
+  "TargetFilePath": "TargetFolder2\\file.txt",
+  "FileSize": 26,
+  "TransferTimeMs": 1
+}
+{
+  "Timestamp": "2025-02-12T01:04:47.0858323+01:00",
+  "BackupName": "Job2",
+  "SourceFilePath": "SourceFolder2\\hello.txt",
+  "TargetFilePath": "TargetFolder2\\hello.txt",
+  "FileSize": 25,
+  "TransferTimeMs": 2
+}
+{
+  "Timestamp": "2025-02-12T01:04:47.1005266+01:00",
+  "BackupName": "Job2",
+  "SourceFilePath": "SourceFolder2\\yo.txt",
+  "TargetFilePath": "TargetFolder2\\yo.txt",
+  "FileSize": 114,
+  "TransferTimeMs": 1
+}
+{
+  "Timestamp": "2025-02-12T01:04:47.1014894+01:00",
+  "Message": "Sauvegarde terminée pour Job2"
+}
+{
+  "Timestamp": "2025-02-12T01:08:50.4818107+01:00",
+  "Message": "Job ajouté : Job1"
+}
+{
+  "Timestamp": "2025-02-12T01:08:50.5638843+01:00",
+  "Message": "Job ajouté : Job2"
+}
+{
+  "Timestamp": "2025-02-12T01:08:50.5693178+01:00",
+  "Message": "Erreur : Répertoire source inexistant -> SourceFolder"
+}
+{
+  "Timestamp": "2025-02-12T01:08:50.5699284+01:00",
+  "Message": "Erreur : Répertoire cible inexistant -> TargetFolder"
+}
+{
+  "Timestamp": "2025-02-12T01:08:50.5712514+01:00",
+  "Message": "Erreur sur Job1 : Répertoires invalides"
+}
+{
+  "Timestamp": "2025-02-12T01:08:50.5718106+01:00",
+  "Message": "Début de la sauvegarde : Job2"
+}
+{
+  "Timestamp": "2025-02-12T01:08:50.6238116+01:00",
+  "BackupName": "Job2",
+  "SourceFilePath": "SourceFolder2\\file.txt",
+  "TargetFilePath": "TargetFolder2\\file.txt",
+  "FileSize": 26,
+  "TransferTimeMs": 2
+}
+{
+  "Timestamp": "2025-02-12T01:08:50.6401175+01:00",
+  "BackupName": "Job2",
+  "SourceFilePath": "SourceFolder2\\hello.txt",
+  "TargetFilePath": "TargetFolder2\\hello.txt",
+  "FileSize": 25,
+  "TransferTimeMs": 1
+}
+{
+  "Timestamp": "2025-02-12T01:08:50.6576649+01:00",
+  "BackupName": "Job2",
+  "SourceFilePath": "SourceFolder2\\yo.txt",
+  "TargetFilePath": "TargetFolder2\\yo.txt",
+  "FileSize": 114,
+  "TransferTimeMs": 1
+}
+{
+  "Timestamp": "2025-02-12T01:08:50.6727651+01:00",
+  "BackupName": "Job2",
+  "SourceFilePath": "SourceFolder2\\cesi\\cesi.txt",
+  "TargetFilePath": "TargetFolder2\\cesi\\cesi.txt",
+  "FileSize": 61,
+  "TransferTimeMs": 1
+}
+{
+  "Timestamp": "2025-02-12T01:08:50.6738265+01:00",
+  "Message": "Sauvegarde terminée pour Job2"
+}
+{
+  "Timestamp": "2025-02-12T01:12:11.7647194+01:00",
+  "Message": "Erreur : Index invalide."
+}
+{
+  "Timestamp": "2025-02-12T01:12:42.0826763+01:00",
+  "Message": "Aucun travail de sauvegarde à exécuter."
+}
+{
+  "Timestamp": "2025-02-12T01:12:58.3587596+01:00",
+  "Message": "Aucun travail de sauvegarde à exécuter."
+}
+{
+  "Timestamp": "2025-02-12T01:13:35.838215+01:00",
+  "Message": "Job ajouté : Cesi vgarde"
+}
+{
+  "Timestamp": "2025-02-12T01:14:02.7631088+01:00",
+  "Message": "Erreur : Répertoire source inexistant -> Source"
+}
+{
+  "Timestamp": "2025-02-12T01:14:02.7634815+01:00",
+  "Message": "Erreur : Répertoire cible inexistant -> file.txt"
+}
+{
+  "Timestamp": "2025-02-12T01:14:02.7643599+01:00",
+  "Message": "Erreur lors de l'exécution de Cesi vgarde : Répertoires invalides"
+}
+{
+  "Timestamp": "2025-02-12T01:18:57.8091+01:00",
+  "Message": "Job ajouté : Job1"
+}
+{
+  "Timestamp": "2025-02-12T01:20:37.8302001+01:00",
+  "Message": "Erreur : Index invalide."
+}
+{
+  "Timestamp": "2025-02-12T01:20:56.3174198+01:00",
+  "Message": "Début de la sauvegarde : Job1"
+}
+{
+  "Timestamp": "2025-02-12T01:20:56.3590686+01:00",
+  "BackupName": "Job1",
+  "SourceFilePath": "SourceFolder\\file.txt",
+  "TargetFilePath": "TargetFolder\\file.txt",
+  "FileSize": 24,
+  "TransferTimeMs": 1
+}
+{
+  "Timestamp": "2025-02-12T01:20:56.3727566+01:00",
+  "Message": "Sauvegarde terminée pour Job1"
+}
+{
+  "Timestamp": "2025-02-12T01:22:34.0515496+01:00",
+  "Message": "Job ajouté : Job2"
+}
+{
+  "Timestamp": "2025-02-12T01:23:39.2036254+01:00",
+  "Message": "Début de la sauvegarde : Job2"
+}
+{
+  "Timestamp": "2025-02-12T01:23:39.2170229+01:00",
+  "BackupName": "Job2",
+  "SourceFilePath": "SourceFolder\\file.txt",
+  "TargetFilePath": "TargetFolder2\\file.txt",
+  "FileSize": 24,
+  "TransferTimeMs": 0
+}
+{
+  "Timestamp": "2025-02-12T01:23:39.2290244+01:00",
+  "Message": "Sauvegarde terminée pour Job2"
+}
+{
+  "Timestamp": "2025-02-12T01:24:53.9153874+01:00",
+  "Message": "Début de la sauvegarde : Job2"
+}
+{
+  "Timestamp": "2025-02-12T01:24:53.929876+01:00",
+  "BackupName": "Job2",
+  "SourceFilePath": "SourceFolder\\file.txt",
+  "TargetFilePath": "TargetFolder2\\file.txt",
+  "FileSize": 23,
+  "TransferTimeMs": 1
+}
+{
+  "Timestamp": "2025-02-12T01:24:53.944117+01:00",
+  "BackupName": "Job2",
+  "SourceFilePath": "SourceFolder\\zgeg.txt",
+  "TargetFilePath": "TargetFolder2\\zgeg.txt",
+  "FileSize": 0,
+  "TransferTimeMs": 0
+}
+{
+  "Timestamp": "2025-02-12T01:24:53.9449131+01:00",
+  "Message": "Sauvegarde terminée pour Job2"
+}
