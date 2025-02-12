@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Text.Json;
 
-namespace Livrable1.Services
+namespace LoggerLibrary
 {
     public class Logger
     {

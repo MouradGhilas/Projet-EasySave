@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/maxencechartier/Projects/Livrable/Projet-EasySave/Livrable1/Livrable1.csproj",
+      "projectUniqueName": "/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/Livrable1/Livrable1.csproj",
       "projectName": "Livrable1",
-      "projectPath": "/Users/maxencechartier/Projects/Livrable/Projet-EasySave/Livrable1/Livrable1.csproj",
+      "projectPath": "/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/Livrable1/Livrable1.csproj",
       "packagesPath": "/Users/maxencechartier/.nuget/packages/",
-      "outputPath": "/Users/maxencechartier/Projects/Livrable/Projet-EasySave/Livrable1/obj/",
+      "outputPath": "/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/Livrable1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/maxencechartier/.nuget/NuGet/NuGet.Config"
@@ -121,13 +121,5 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file /Users/maxencechartier/Projects/Livrable/Projet-EasySave/Livrable1/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

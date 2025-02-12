@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Livrable1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df3d113d5fe4632f8f6dceb1c5a4e3da4f048f59")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a00eb4107b0930c6bf059c2317f5aa8a4d86c368")]
 [assembly: System.Reflection.AssemblyProductAttribute("Livrable1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Livrable1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

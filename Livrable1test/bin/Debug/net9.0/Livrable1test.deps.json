@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v9.0": {
       "Livrable1test/1.0.0": {
+        "dependencies": {
+          "LoggerLibrary": "1.0.0"
+        },
         "runtime": {
           "Livrable1test.dll": {}
+        }
+      },
+      "LoggerLibrary/1.0.0": {
+        "runtime": {
+          "LoggerLibrary.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "Livrable1test/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LoggerLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

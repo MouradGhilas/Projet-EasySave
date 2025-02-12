@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livrable1", "Livrable1\Livrable1.csproj", "{439D6C9B-BBA6-4DD1-B780-C0B5ACAA68B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerLibrary", "LoggerLibrary\LoggerLibrary.csproj", "{DA2B8FA1-2C5E-4B37-A1CC-24EF87520A84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{439D6C9B-BBA6-4DD1-B780-C0B5ACAA68B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{439D6C9B-BBA6-4DD1-B780-C0B5ACAA68B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{439D6C9B-BBA6-4DD1-B780-C0B5ACAA68B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA2B8FA1-2C5E-4B37-A1CC-24EF87520A84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA2B8FA1-2C5E-4B37-A1CC-24EF87520A84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA2B8FA1-2C5E-4B37-A1CC-24EF87520A84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA2B8FA1-2C5E-4B37-A1CC-24EF87520A84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

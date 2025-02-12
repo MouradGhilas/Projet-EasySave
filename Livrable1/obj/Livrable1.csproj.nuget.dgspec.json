@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/maxencechartier/Projects/Livrable/Projet-EasySave/Livrable1/Livrable1.csproj": {}
+    "/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/Livrable1/Livrable1.csproj": {}
   },
   "projects": {
-    "/Users/maxencechartier/Projects/Livrable/Projet-EasySave/Livrable1/Livrable1.csproj": {
+    "/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/Livrable1/Livrable1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/maxencechartier/Projects/Livrable/Projet-EasySave/Livrable1/Livrable1.csproj",
+        "projectUniqueName": "/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/Livrable1/Livrable1.csproj",
         "projectName": "Livrable1",
-        "projectPath": "/Users/maxencechartier/Projects/Livrable/Projet-EasySave/Livrable1/Livrable1.csproj",
+        "projectPath": "/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/Livrable1/Livrable1.csproj",
         "packagesPath": "/Users/maxencechartier/.nuget/packages/",
-        "outputPath": "/Users/maxencechartier/Projects/Livrable/Projet-EasySave/Livrable1/obj/",
+        "outputPath": "/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/Livrable1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/maxencechartier/.nuget/NuGet/NuGet.Config"

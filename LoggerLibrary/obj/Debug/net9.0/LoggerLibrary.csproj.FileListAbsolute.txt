@@ -1,0 +1,12 @@
+/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/bin/Debug/net9.0/LoggerLibrary.deps.json
+/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/bin/Debug/net9.0/LoggerLibrary.dll
+/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/bin/Debug/net9.0/LoggerLibrary.pdb
+/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/obj/Debug/net9.0/LoggerLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/obj/Debug/net9.0/LoggerLibrary.AssemblyInfoInputs.cache
+/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/obj/Debug/net9.0/LoggerLibrary.AssemblyInfo.cs
+/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/obj/Debug/net9.0/LoggerLibrary.csproj.CoreCompileInputs.cache
+/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/obj/Debug/net9.0/LoggerLibrary.sourcelink.json
+/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/obj/Debug/net9.0/LoggerLibrary.dll
+/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/obj/Debug/net9.0/refint/LoggerLibrary.dll
+/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/obj/Debug/net9.0/LoggerLibrary.pdb
+/Users/maxencechartier/Projects/genieLogiciel/Projet-EasySave/LoggerLibrary/obj/Debug/net9.0/ref/LoggerLibrary.dll

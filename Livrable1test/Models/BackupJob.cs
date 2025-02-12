@@ -3,6 +3,7 @@ using System.IO;
 using System.Text.Json;
 using Livrable1.Enums;
 using Livrable1.Services;
+using LoggerLibrary;
 
 namespace Livrable1.Models
 {

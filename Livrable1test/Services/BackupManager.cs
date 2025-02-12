@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Livrable1.Models;
+using LoggerLibrary;
 
 namespace Livrable1.Services
 {

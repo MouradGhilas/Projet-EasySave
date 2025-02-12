@@ -1,4 +1,5 @@
 using System;
+using LoggerLibrary;
 
 namespace Livrable1.Models
 {
