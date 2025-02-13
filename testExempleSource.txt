@@ -1,3 +1,0 @@
-Ceci est un exemple de texte pour le fichier testExemple.txt.
-Il contient plusieurs lignes de texte pour illustrer comment le fichier peut être utilisé.
-Vous pouvez ajouter, modifier ou supprimer du texte selon vos besoins.
