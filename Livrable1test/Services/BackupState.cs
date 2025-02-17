@@ -1,18 +1,15 @@
-using System;
-using LoggerLibrary;
-
-namespace Livrable1.Models
+namespace Livrable1.Services
 {
     public class BackupState
     {
-        public string BackupName { get; set; } // Nom de la sauvegarde
-        public DateTime LastActionTimestamp { get; set; } // Horodatage de la dernière action
-        public string Status { get; set; } // État du travail (Actif, Non Actif, etc.)
-        public int TotalFiles { get; set; } // Nombre total de fichiers éligibles
-        public long TotalSize { get; set; } // Taille totale des fichiers à transférer
-        public int RemainingFiles { get; set; } // Nombre de fichiers restants
-        public long RemainingSize { get; set; } // Taille des fichiers restants
-        public string CurrentSourceFile { get; set; } // Fichier source en cours de sauvegarde
-        public string CurrentTargetFile { get; set; } // Fichier de destination
+        public string BackupName { get; set; } = string.Empty;
+        public DateTime LastActionTimestamp { get; set; }
+        public string Status { get; set; } = string.Empty;
+        public int TotalFiles { get; set; }
+        public long TotalSize { get; set; }
+        public int RemainingFiles { get; set; }
+        public long RemainingSize { get; set; }
+        public string? CurrentSourceFile { get; set; }
+        public string? CurrentTargetFile { get; set; }
     }
 }
