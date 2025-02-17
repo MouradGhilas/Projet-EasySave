@@ -1,28 +1,36 @@
 using System;
 using System.IO;
 using System.Text.Json;
+using System.Xml.Linq;
 
 namespace LoggerLibrary
 {
     public class Logger
     {
         private readonly string _logDirectory;
-    
-        public Logger(string logDirectory)
+        private readonly LogFormat _logFormat;
+
+        public Logger(string logDirectory, LogFormat logFormat)
         {
             _logDirectory = logDirectory;
-    
-            // Crée le répertoire de logs s'il n'existe pas
+            _logFormat = logFormat;
+
             if (!Directory.Exists(_logDirectory))
             {
                 Directory.CreateDirectory(_logDirectory);
             }
         }
-    
-        // Méthode pour écrire un log détaillé au format JSON
-        public void LogAction(string backupName, string sourceFilePath, string targetFilePath, long fileSize, long transferTimeMs)
+
+        public void LogMessage(string message)
         {
-            // Crée un objet logEntry avec les informations nécessaires
+            string logEntry = $"{DateTime.Now}: {message}";
+            string logFilePath = Path.Combine(_logDirectory, $"{DateTime.Now:yyyy-MM-dd}.{_logFormat.ToString().ToLower()}");
+            File.AppendAllText(logFilePath, logEntry + Environment.NewLine);
+            Console.WriteLine(logEntry);
+        }
+
+        public void LogAction(string backupName, string sourceFilePath, string targetFilePath, long fileSize, long transferTimeMs, long encryptionTimeMs = 0)
+        {
             var logEntry = new
             {
                 Timestamp = DateTime.Now,
@@ -30,47 +38,36 @@ namespace LoggerLibrary
                 SourceFilePath = sourceFilePath,
                 TargetFilePath = targetFilePath,
                 FileSize = fileSize,
-                TransferTimeMs = transferTimeMs
+                TransferTimeMs = transferTimeMs,
+                EncryptionTimeMs = encryptionTimeMs
             };
-    
-            // Sérialise l'objet en JSON sans encoder les caractères spéciaux
-            var options = new JsonSerializerOptions
+
+            string logEntryString;
+            if (_logFormat == LogFormat.Json)
             {
-                WriteIndented = true,
-                Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
-            };
-            string jsonLogEntry = JsonSerializer.Serialize(logEntry, options);
-    
-            // Détermine le fichier de log journalier
-            string logFilePath = Path.Combine(_logDirectory, $"{DateTime.Now:yyyy-MM-dd}.json");
-    
-            // Ajoute l'entrée de log au fichier
-            File.AppendAllText(logFilePath, jsonLogEntry + Environment.NewLine);
+                logEntryString = JsonSerializer.Serialize(logEntry, new JsonSerializerOptions { WriteIndented = true });
+            }
+            else
+            {
+                logEntryString = new XElement("LogEntry",
+                    new XElement("Timestamp", logEntry.Timestamp),
+                    new XElement("BackupName", logEntry.BackupName),
+                    new XElement("SourceFilePath", logEntry.SourceFilePath),
+                    new XElement("TargetFilePath", logEntry.TargetFilePath),
+                    new XElement("FileSize", logEntry.FileSize),
+                    new XElement("TransferTimeMs", logEntry.TransferTimeMs),
+                    new XElement("EncryptionTimeMs", logEntry.EncryptionTimeMs)
+                ).ToString();
+            }
+
+            string logFilePath = Path.Combine(_logDirectory, $"{DateTime.Now:yyyy-MM-dd}.{_logFormat.ToString().ToLower()}");
+            File.AppendAllText(logFilePath, logEntryString + Environment.NewLine);
         }
-    
-        // Méthode pour écrire un log simple (message d'erreur ou information générale)
-        public void LogMessage(string message)
-        {
-            // Crée un objet logEntry pour les messages simples
-            var logEntry = new
-            {
-                Timestamp = DateTime.Now,
-                Message = message
-            };
-    
-            // Sérialise l'objet en JSON sans encoder les caractères spéciaux
-            var options = new JsonSerializerOptions
-            {
-                WriteIndented = true,
-                Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
-            };
-            string jsonLogEntry = JsonSerializer.Serialize(logEntry, options);
-    
-            // Détermine le fichier de log journalier
-            string logFilePath = Path.Combine(_logDirectory, $"{DateTime.Now:yyyy-MM-dd}.json");
-    
-            // Ajoute l'entrée de log au fichier
-            File.AppendAllText(logFilePath, jsonLogEntry + Environment.NewLine);
-        }
+    }
+
+    public enum LogFormat
+    {
+        Json,
+        Xml
     }
 }
