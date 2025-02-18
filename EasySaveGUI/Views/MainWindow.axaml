@@ -1,0 +1,83 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:EasySaveGUI.ViewModels"
+        x:Class="EasySaveGUI.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Title="EasySaveGUI"
+        Width="800" Height="600">
+
+    <Grid>
+        <!-- Fond général de la fenêtre -->
+        <Border Background="#2C3E50" Margin="0">
+            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <!-- Titre avec dégradé -->
+                <Border>
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Color="#3498DB" Offset="0"/>
+                            <GradientStop Color="#2C3E50" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <TextBlock Text="EasySave - Gestionnaire de Sauvegarde"
+                               FontSize="30"
+                               FontWeight="Bold"
+                               Foreground="White"
+                               HorizontalAlignment="Center"
+                               Padding="15"/>
+                </Border>
+
+                <!-- Menu ListBox -->
+                <ListBox Background="#2C3E50"
+                         BorderThickness="0"
+                         Margin="20"
+                         FontSize="16"
+                         SelectedItem="{Binding SelectedMenuItem, Mode=TwoWay}">
+                    
+                    <!-- Style des ListBoxItem avec séparation -->
+                    <ListBoxItem>
+                        <StackPanel>
+                            <TextBlock Text="Créer un travail de sauvegarde" Foreground="White" Padding="10"/>
+                            <Border Height="1" Background="#7F8C8D" Margin="5,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <ListBoxItem>
+                        <StackPanel>
+                            <TextBlock Text="Lister les travaux de sauvegarde" Foreground="White" Padding="10"/>
+                            <Border Height="1" Background="#7F8C8D" Margin="5,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <ListBoxItem>
+                        <StackPanel>
+                            <TextBlock Text="Exécuter une sauvegarde" Foreground="White" Padding="10"/>
+                            <Border Height="1" Background="#7F8C8D" Margin="5,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <ListBoxItem>
+                        <StackPanel>
+                            <TextBlock Text="Exécuter toutes les sauvegardes" Foreground="White" Padding="10"/>
+                            <Border Height="1" Background="#7F8C8D" Margin="5,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <ListBoxItem>
+                        <StackPanel>
+                            <TextBlock Text="Afficher les logs" Foreground="White" Padding="10"/>
+                            <Border Height="1" Background="#7F8C8D" Margin="5,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <ListBoxItem>
+                        <StackPanel>
+                            <TextBlock Text="Quitter" Foreground="White" Padding="10"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                </ListBox>
+            </StackPanel>
+        </Border>
+    </Grid>
+
+</Window>
