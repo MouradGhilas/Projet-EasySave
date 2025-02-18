@@ -1,0 +1,84 @@
+{
+  "Timestamp": "2025-02-13T09:30:34.474566+01:00",
+  "Message": "Job ajouté : first"
+}
+{
+  "Timestamp": "2025-02-13T09:31:12.7688135+01:00",
+  "Message": "Job ajouté : second"
+}
+{
+  "Timestamp": "2025-02-13T09:31:26.2757269+01:00",
+  "Message": "Job ajouté : third"
+}
+{
+  "Timestamp": "2025-02-13T09:31:43.5599456+01:00",
+  "Message": "Job ajouté : fourth"
+}
+{
+  "Timestamp": "2025-02-13T09:31:57.6829796+01:00",
+  "Message": "Job ajouté : fifth"
+}
+{
+  "Timestamp": "2025-02-13T09:32:09.618898+01:00",
+  "Message": "Erreur : Limite de 5 sauvegardes atteinte."
+}
+{
+  "Timestamp": "2025-02-13T09:32:34.5146134+01:00",
+  "Message": "Début de la sauvegarde : first"
+}
+{
+  "Timestamp": "2025-02-13T09:32:34.6204613+01:00",
+  "BackupName": "first",
+  "SourceFilePath": "SourceFolder\\file.txt",
+  "TargetFilePath": "TargetFolder\\file.txt",
+  "FileSize": 23,
+  "TransferTimeMs": 32
+}
+{
+  "Timestamp": "2025-02-13T09:32:34.6438777+01:00",
+  "BackupName": "first",
+  "SourceFilePath": "SourceFolder\\zgeg.txt",
+  "TargetFilePath": "TargetFolder\\zgeg.txt",
+  "FileSize": 16,
+  "TransferTimeMs": 2
+}
+{
+  "Timestamp": "2025-02-13T09:32:34.6460754+01:00",
+  "Message": "Sauvegarde terminée pour first"
+}
+{
+  "Timestamp": "2025-02-13T10:39:06.027537+01:00",
+  "Message": "Job ajouté : test"
+}
+{
+  "Timestamp": "2025-02-13T10:39:26.8103652+01:00",
+  "Message": "Début de la sauvegarde : test"
+}
+{
+  "Timestamp": "2025-02-13T10:39:26.8861276+01:00",
+  "BackupName": "test",
+  "SourceFilePath": "SourceFolder\\file.txt",
+  "TargetFilePath": "TargetFolder\\file.txt",
+  "FileSize": 13,
+  "TransferTimeMs": 4
+}
+{
+  "Timestamp": "2025-02-13T10:39:26.9121424+01:00",
+  "Message": "Sauvegarde terminée pour test"
+}
+{
+  "Timestamp": "2025-02-13T10:43:46.807436+01:00",
+  "Message": "Job ajouté : error"
+}
+{
+  "Timestamp": "2025-02-13T10:43:53.0231479+01:00",
+  "Message": "Erreur : Répertoire source inexistant -> idokdoz"
+}
+{
+  "Timestamp": "2025-02-13T10:43:53.0240246+01:00",
+  "Message": "Erreur : Répertoire cible inexistant -> okod"
+}
+{
+  "Timestamp": "2025-02-13T10:43:53.4743913+01:00",
+  "Message": "Erreur lors de l'exécution de error : Répertoires invalides"
+}

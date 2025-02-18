@@ -1,0 +1,12 @@
+17/02/2025 23:56:09: Job ajouté : lol
+17/02/2025 23:56:26: Début de la sauvegarde : lol
+<LogEntry>
+  <Timestamp>2025-02-17T23:56:27.1170099+01:00</Timestamp>
+  <BackupName>lol</BackupName>
+  <SourceFilePath>SourceFolder\file.txt</SourceFilePath>
+  <TargetFilePath>TargetFolder\file.txt</TargetFilePath>
+  <FileSize>13</FileSize>
+  <TransferTimeMs>5</TransferTimeMs>
+  <EncryptionTimeMs>0</EncryptionTimeMs>
+</LogEntry>
+17/02/2025 23:56:27: Sauvegarde terminée pour lol
